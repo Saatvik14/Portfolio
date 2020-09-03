@@ -129,7 +129,6 @@ class MyApp extends StatelessWidget {
                   child: Text(
                     "I am pursuing B.Tech with CS as my branch from Ajay Kumar garg Engineering college.I have done programming in core language like C++.Now,I am learning App development using Flutter.I am innovative and has a great capability to work with a team.",
                     textAlign: TextAlign.center,
-                    overflow: TextOverflow.ellipsis,
                     maxLines: 6,
                     style: TextStyle(
                       fontSize: 15,
