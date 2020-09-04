@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             backgroundColor: Colors.black,
             body: SingleChildScrollView(
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.only(top: 10),
+                      padding: const EdgeInsets.only(top: 35),
                       child: Center(
                         child: Text(
                           "BRL Trainee",
@@ -186,12 +187,17 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 5,
+                      height: 15,
                     ),
                     Center(
                       child: RaisedButton(
                         onPressed: _launchURL,
-                        child: Text("My Resume"),
+                        child: Text(
+                          "My Resume",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
                   ],
